@@ -1,0 +1,42 @@
+<table border="1">
+	<tr>
+		<th>item_type</th>
+		<th>sku</th>
+		<th>Title</th>
+		<th>serial_number</th>
+		<th>quantity</th>
+		<th>price</th>
+		<th>organization</th>
+		<th>Length</th>
+		<th>Breadth</th>
+		<th>Height</th>
+		<th>Weight</th>
+		<th>description</th>
+		<th>short_description</th>
+		<th>asset_code</th>
+		<th>grade</th>
+		<th>category</th>
+		<th>brand</th>			
+	</tr>
+	<% @products.each do |product| %>
+	<tr>
+		<th><%= product.item_type%></th>
+		<th><%= product.sku%></th>
+		<th><%= product.Title%></th>
+		<th><%= product.serial_number%></th>
+		<th><%= product.quantity%></th>
+		<th><%= product.price%></th>
+		<th><%= product.organization%></th>
+		<th><%= product.Length%></th>
+		<th><%= product.Breadth%></th>
+		<th><%= product.Height%></th>
+		<th><%= product.Weight%></th>
+		<th><%= product.description%></th>
+		<th><%= product.short_description%></th>
+		<th><%= product.asset_code%></th>
+		<th><%= product.grade%></th>
+		<th><%= product.category%></th>
+		<th><%= product.brand%></th>
+	</tr>
+	<% end %>
+</table>
